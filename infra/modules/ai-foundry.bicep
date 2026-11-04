@@ -81,7 +81,13 @@ resource appInsightsConnection 'Microsoft.CognitiveServices/accounts/projects/co
   properties: {
     category: 'AppInsights'
     target: appInsightsResourceId
+
+    metadata: {
+      ResourceId: appInsightsResourceId
+    }
+
     authType: 'ApiKey'
+
     credentials: {
       key: appInsightsInstrumentationKey
     }
