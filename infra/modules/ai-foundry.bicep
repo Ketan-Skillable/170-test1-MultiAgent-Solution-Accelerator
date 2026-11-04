@@ -75,6 +75,7 @@ resource foundryProject 'Microsoft.CognitiveServices/accounts/projects@2025-12-0
 // Without this, the Foundry portal Traces tab shows nothing even though agent
 // spans are correctly exported to App Insights by client-side instrumentation.
 
+/*
 resource appInsightsConnection 'Microsoft.CognitiveServices/accounts/projects/connections@2025-12-01' = {
   name: 'app-insights'
   parent: foundryProject
@@ -93,6 +94,7 @@ resource appInsightsConnection 'Microsoft.CognitiveServices/accounts/projects/co
     }
   }
 }
+*/
 // ── gpt-5.4 Model Deployment ─────────────────────────────────────────────
 // GlobalStandard  = no data residency guarantee, available in more regions.
 // DataZoneStandard = data residency bounded to a geographic zone (US/EU),
